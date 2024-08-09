@@ -48,7 +48,7 @@ class WalletHandler:
 
         return balance_sum
 
-    def _get_transactions_of_wallet_address(self, chain_name: str, wallet_address: str, page: int = 0):
+    def _get_transactions_of_wallet_address(self, chain_name: str, wallet_address: str, page: int):
         url_params = {}
         headers = {
             "Authorization": f"Bearer {str(self.__api_key)}",

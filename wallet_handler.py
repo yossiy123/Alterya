@@ -12,8 +12,6 @@ class WalletHandler:
         headers = {
             "Authorization": f"Bearer {str(self.__api_key)}",
             "X-Requested-With": "com.covalenthq.sdk.python/1.0.2",
-            "quote-currency": "USD",
-            "no-nft-asset-metadata": str(True),
         }
         url = f"https://api.covalenthq.com/v1/{chain_name}/address/{wallet_address}/balances_v2/"
 
